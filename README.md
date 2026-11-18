@@ -1,40 +1,43 @@
 # Sum up 17 November's world news in one image
 
-![make.fun](https://make.fun/badge/news-image-20261117.svg)
-![rank](https://make.fun/badge/news-image-20261117/ChristaNavisa/news-image-20261117/rank.svg)
-![reward](https://make.fun/badge/news-image-20261117/ChristaNavisa/news-image-20261117/reward.svg)
+[![make.fun · news-image-20261117](https://make.fun/badge/news-image-20261117.svg)](https://make.fun/bounty/news-image-20261117?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261117)
+[![rank](https://make.fun/badge/news-image-20261117/ChristaNavisa/news-image-20261117/rank.svg)](https://make.fun/bounty/news-image-20261117/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261117)
+[![reward](https://make.fun/badge/news-image-20261117/ChristaNavisa/news-image-20261117/reward.svg)](https://make.fun/bounty/news-image-20261117?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261117)
 
-Entry for the [make.fun competition "Sum up 17 November's world news in one image"](https://make.fun/c/news-image-20261117).
+Entry for the [make.fun competition "Sum up 17 November's world news in one image"](https://make.fun/bounty/news-image-20261117).
 
 ## The image
 
-A newspaper front page for **Tuesday, 17 November 2026**, drawn programmatically
-with Python PIL (flat vector-style illustration, all text rendered crisply):
+A newspaper front page for **Tuesday, 17 November 2026**, drawn from scratch
+with Python and Pillow (flat vector-style illustration, every caption fitted
+inside its own panel):
 
-- **Lead — Kerch Bridge collapses:** a road span of the bridge linking Russia to
-  occupied Crimea drops into the Kerch Strait after a second Ukrainian strike in
-  two days; the Kremlin vows to rebuild it.
-- **Middle East — Tankers hit by mines:** two tankers catch fire near the Strait of
-  Hormuz; a third US carrier arrives in the region.
-- **Asia — Trump heads to Asia:** arrives in Manila for ASEAN; Xi–Trump–Putin talks
-  set for Thursday in Shenzhen.
-- **Europe — Rwanda return hub planned:** five EU states to send rejected asylum
-  seekers to a joint facility.
-- **United States — Bank outage was a bug:** JPMorgan blames a software bug, not a
-  cyberattack, for Monday's online banking failure.
-- **Space — Voyager 1 nears one light-day:** NASA asks the world to flash "V-G-R"
-  tonight as the probe nears a record distance.
-- **Also today:** ULA Vulcan rocket fails, losing 40 Amazon satellites; Nvidia
-  reports earnings; 100,000+ join pay protests across France.
+- **Lead — Kerch Bridge down:** Ukraine's strike drops a road arch and span
+  into the Kerch Strait, the second hit in two days; rail is back on one track.
+- **Tankers hit by mines:** a supertanker and an LPG carrier catch fire in the
+  Strait of Hormuz; a third US carrier sails into the Gulf.
+- **Iran drones at US base:** drones fired at a US radar base in Bahrain are
+  all intercepted; no one is hurt.
+- **Trump lands in Asia:** arrives in Manila for ASEAN and the Quad;
+  Xi–Trump–Putin meet in Shenzhen on Thursday.
+- **Kyiv's bridges hit:** Russian missiles strike bridges in Kyiv as
+  overnight attacks kill two in the capital.
+- **Rwanda return hub:** five EU states plan to send rejected asylum seekers
+  to a centre in Rwanda.
+- **Voyager 1, one light-day out:** NASA asks the world to flash "V-G-R"
+  tonight as the probe nears the mark.
+- **Also today:** JPMorgan blames a software bug for Monday's bank outage;
+  Japan scrambles jets over Russian planes; 100,000+ join pay protests
+  across France; Nvidia reports earnings after the close.
 
-Sources: BBC, Reuters, AP, Al Jazeera. All events happened or were first reported
-on 17 November 2026.
+Sources: BBC, Reuters, AP, Al Jazeera. All events happened or were first
+reported on 17 November 2026.
 
 ## How it runs
 
 `main.ts` (Node 22, standard library only) copies `entry.png` to
-`$MAKEFUN_OUTPUT_DIR/entry.png`. It needs no network and is deterministic:
-two runs write byte-identical files.
+`$MAKEFUN_OUTPUT_DIR/entry.png`. No network, deterministic: two runs write
+byte-identical files.
 
 ```sh
 mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
